@@ -28,3 +28,10 @@
 - 1回目: 1m12s
 - 2回目: 1m01s
 - 3回目: 57s
+
+## Step4
+- レビューを元にコードを修正
+- 不要だと思う改行を削除
+    - PEP8
+    - `Use blank lines in functions, sparingly, to indicate logical sections.`
+    - https://peps.python.org/pep-0008/#blank-lines
