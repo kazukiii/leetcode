@@ -13,13 +13,12 @@ class Solution:
             slow = slow.next
 
             if fast == slow:
-                ptr1 = head
-                ptr2 = slow
-                while ptr1 != ptr2:
-                    ptr1 = ptr1.next
-                    ptr2 = ptr2.next
+                from_head = head
+                from_collision = slow
+                while from_head != from_collision:
+                    from_head = from_head.next
+                    from_collision = from_collision.next
 
-                return ptr1
+                return from_head
 
         return None
-

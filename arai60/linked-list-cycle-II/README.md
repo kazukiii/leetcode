@@ -35,3 +35,5 @@
     - PEP8
     - `Use blank lines in functions, sparingly, to indicate logical sections.`
     - https://peps.python.org/pep-0008/#blank-lines
+- しっくりくる命名を見つけたので修正
+    - Ref. https://github.com/goto-untrapped/Arai60/pull/22#discussion_r1619211892
