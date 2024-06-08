@@ -21,3 +21,9 @@
 - 1回目: 1m03s
 - 2回目: 50s
 - 3回目: 53s
+
+## Step4
+- step1でメモリリークしていたコードを修正
+    - 基本的にはスタック領域にメモリを確保するようにする
+    - Ref. https://github.com/Ryotaro25/leetcode_first60/pull/8#discussion_r1615892524
+    - Ref. https://github.com/Ryotaro25/leetcode_first60/pull/5#discussion_r1611245294
