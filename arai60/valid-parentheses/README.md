@@ -20,3 +20,14 @@
 - 1回目: 1m51s
 - 2回目: 1m53s
 - 3回目: 1m28s
+
+## Step4
+- レビューを元にコードを修正
+- 変数名の見直し
+    - stack -> bracket_stack
+        - 何を入れるstackなのかを明確に
+    - bracket_pairs -> open_to_close
+        - 例えば、open_to_close[open_bracket] という記述を見たときにclose_bracketが返ってくることが一目でわかる
+        - より具体的になって、わかりやすくなった感覚
+- `if not open_to_close[open_bracket] == c:` と書いていたところを `if open_to_close[open_bracket] != c:`に
+- early continueしてネストを浅く
