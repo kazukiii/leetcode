@@ -37,3 +37,12 @@
 - 2回目: 2m45s
 - 3回目: 2m30s
 
+## Step4
+- レビューを元に修正
+- 変数名の見直し
+    - num_count -> num_to_count
+    - min_heap -> min_count_and_nums
+    - key, value -> num, count
+- 拡張for文のコロンの前後にはspaceを入れる
+- pairの代わりにstructを使うように修正
+
