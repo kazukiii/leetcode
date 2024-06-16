@@ -12,11 +12,12 @@
         - time: O(n), space: O(n)
     - ソートして二分探索
         - ソートしたら二分探索可能
-        - time: O(n log n), space: O(1)
+        - time: O(n log n), space: O(1) -> space: O(1)は勘違いだった。元のインデックスを保持する必要があるので、正しくはO(n)
     - ソートして2 pointers
         - メモリO(1)の解法では、最速になると思う
         - ソートがボトルネックになる
-        - time: O(n lon n), space: O(1)
+        - time: O(n lon n), space: O(1) -> space: O(1)は勘違いだった。元のインデックスを保持する必要があるので、正しくはO(n)
+
 - ハッシュマップを使った手法を選択
 - あとは実装
 
@@ -34,3 +35,11 @@
 - 1回目: 1m02s
 - 2回目: 55s
 - 3回目: 47s
+
+## Step4
+- レビューを元に修正
+- 変数名を変更
+    - complement -> complement_value
+- Exceptionにメッセージを付与
+    - 呼び出し元に対して親切に
+- enumerateを使ってみた
