@@ -47,3 +47,6 @@
 - SumPairのelementsとindiceは要素数が必ず2つなので型を変更
     - vector<int> -> pair<int, int>
 - SumPairにコンストラクタを定義して、同じ記述を集約
+- emplace_backやemplaceを使うことでコンストラクタの引数を直接受け取り、コンテナの末尾に新しい要素を直接構築できる
+- moveすることで構造体のコピーを防ぎ、所有権だけ移動できる
+- answerは要素数がkであることが確定しているので、先にメモリをreserveしておく
