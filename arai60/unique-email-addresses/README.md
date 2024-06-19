@@ -31,3 +31,10 @@
 - 1回目: 2m19s
 - 2回目: 2m15s
 - 3回目: 2m02s
+
+## Step4
+- レビューを元に修正
+- privateメソッド相当のものには先頭に _ を付与
+- メソッド名の見直し
+    - `claen_local_name` -> `_normalize_local_name`
+    - `remove_after_plus` -> `_remove_plus_and_after`
