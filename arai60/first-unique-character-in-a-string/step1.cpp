@@ -8,7 +8,7 @@ public:
         }
 
         int answer = INT_MAX;
-        for (const auto& [num, count]: char_to_count) {
+        for (const auto& [character, count]: char_to_count) {
             if (count.count == 1) {
                 answer = min(answer, count.index);
             }
