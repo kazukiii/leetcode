@@ -40,3 +40,13 @@
 - 1回目: 5m37s
 - 2回目: 5m12s
 - 3回目: 4m51s
+
+## Step4
+- レビューを元に修正
+- 変数名の見直し
+    - n_row -> num_rows
+    - n_col -> num_cols
+    - drow -> delta_row
+    - dcol -> delta_col
+- explore_islandの引数にtupleを渡すのではなく、intを2つ渡すようにした
+- 方向を行と列で分けて書いていたけど、ペアにしてみた
