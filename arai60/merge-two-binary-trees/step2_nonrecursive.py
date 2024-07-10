@@ -7,8 +7,8 @@
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root1 and not root2: return None
-        if not root1: return TreeNode(root2.val)
-        if not root2: return TreeNode(root1.val)
+        if not root1: return deepcopy(root2)
+        if not root2: return deepcopy(root1)
 
         merged_tree = TreeNode(root1.val + root2.val)
         nodes_to_visit = [(root1, root2, merged_tree)]
