@@ -10,16 +10,16 @@
         - 手元のmacで確認したところ同様に8MB
     - 各スタックフレームのサイズ
         - 引数
-            - TreeNode* root: 4 + 8 + 8 = 20 byte (以下、64bitシステムとして考える)
-            - long long lower: 8 byte
-            - long long upper: 8 byte
+            - TreeNode* root: 8 bytes (以下、64bitシステムとして考える)
+            - long long lower: 8 bytes
+            - long long upper: 8 bytes
         - ローカル変数
             - なし
         - その他
-            - 戻りアドレス: 8 byte
-            - ベースポインタ: 8 byte
-        - 合計: 52 byte
-    - 最大で 8000000 / 52 = 153846 くらいは大丈夫そう
+            - 戻りアドレス: 8 bytes
+            - ベースポインタ: 8 bytes
+        - 合計: 40 bytes
+    - 最大で 8000000 / 40 = 2 * 10^5 くらいは大丈夫そう
     - 今回はノード数が最大で10^4なので、見積もり上は再帰で書いても大丈夫
 - Step1では、再帰DFSで実装する
 
